@@ -14,7 +14,7 @@ public class Usuario {
 
     public Usuario(String cpf, String nome, LocalDate nascimento, String email) {
         if (cpf == null || !cpf.matches("\\d{3}\\.\\d{3}\\.\\d{3}\\-\\d{2}")) {
-            throw new IllegalArgumentException("Cpf no padrão incorreto!");
+            throw new IllegalArgumentException("Cpf no padrao incorreto!");
         }
 
         this.cpf = cpf;
